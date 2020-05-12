@@ -2,88 +2,34 @@
     <head>
         <title>Hip-Hop</title>
         <meta name="viewport" content="width=device-length, initial-scale=1">
-        <style>
-            .text{
-                background-color:black;
-                color: white;
-                mix-blend-mode:multiply;
-                font-size: 5vw;
-                margin: 0 auto;
-                top: 50%;
-                left: 50%;    
-                transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                position: absolute;
-                text-align: center;
-                width: 50%;
-                padding: 0;
-                font-weight: bold;
-
-            }
-            .about{
-                text-align: left;
-                margin-left: 10px;
-                margin-right: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                background-color: burlywood;
-                mix-blend-mode: multiply;
-                color: black;
-            }
-            .scene{
-                width: 100%;
-                height: 100%;
-                perspective: 1000px;
-                background-color: transparent;
-            }
-            .card{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                transition: transform(0.8s);
-                transform-style: preserve-3d;
-            }
-            .scene:hover .card{
-                transform: rotateY(180deg);
-            }
-            .front-flip{
-                transform: rotateY(180deg);
-            }
-            .back-flip{
-                transform: rotateY(180deg);
-
-            }
-            .bg{
-                background-size: cover;
-                position: relative;
-                height: 100%;
-            }
-            .card_face{
-                backface-visibility: hidden;
-                height: 100%;
-                width: 100%;
-            }
-            .front-flip .back-flip{
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-            }
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="assets/css/landing_page.css">
     </head>
     <body>
-        <div class="scene">
-            <div class="card">
-                <div class="front-flip card_face">
-                    <div class="bg">
-                        <img src="D:\UI\hiphop\assets\media\hh2.jpg">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <div class="video">
+                        <video id="myvideo" loop muted autoplay>
+                            <source src="assets/images/videoplayback.mp4" type="video/mp4">
+                            sorry,your browser dosen't support embed videos.
+                        </video>
                     </div>
-                    <div class="text">
-                    <p>HIPHOP</p></div>
+                    <div class="text">HIPHOP</div>
                 </div>
-                <div class="back-flip card_face">
+                <div class="flip-box-back">
                     <div class="about">
-                    <h2><u>About Hiphop</u></h2>
-                    <p>Hip-hop dance refers to street dance styles primarily performed to hip-hop music or that have evolved as part of hip-hop culture. It includes a wide range of styles primarily breaking, locking, and popping which were created in the 1970s and made popular by dance crews in the United States. The television show Soul Train and the 1980s films Breakin’, Beat Street, and Wild Style showcased these crews and dance styles in their early stages; therefore, giving hip-hop mainstream exposure. The dance industry responded with a commercial, studio-based version of hip-hop—sometimes called “new style”—and a hip-hop influenced style of jazz dance called “jazz-funk”. Classically trained dancers developed these studio styles in order to choreograph from the hip-hop dances that were performed on the street. Because of this development, hip-hop dance is practiced in both dance studios and outdoor spaces.</p></div>
+                        <h2><u>About HipHop</u><h2>
+                        <br><br>
+                        <p>Hip-hop dance refers to street dance styles primarily performed to hip-hop music or that have evolved as part 
+                        of hip-hop culture. It includes a wide range of styles primarily breaking, locking, and popping which were 
+                        created in the 1970s and made popular by dance crews in the United States. The television show Soul Train and 
+                        the 1980s films Breakin’, Beat Street, and Wild Style showcased these crews and dance styles in their early 
+                        stages; therefore, giving hip-hop mainstream exposure. The dance industry responded with a commercial, 
+                        studio-based version of hip-hop—sometimes called “new style”—and a hip-hop influenced style of jazz dance 
+                        called “jazz-funk”. Classically trained dancers developed these studio styles in order to choreograph from 
+                        the hip-hop dances that were performed on the street. Because of this development, hip-hop dance is practiced 
+                        in both dance studios and outdoor spaces.</p>
+                    </div>
                 </div>
             </div>
         </div>
